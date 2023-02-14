@@ -17,7 +17,7 @@ const Index = () => {
       <Box
         pos={'relative'}
         width={'full'}
-        h={['60vh', '95vh']}
+        h={['75vh', '95vh']}
         bgImg={'/bgimg.jpg'}
         bgPos={'center'}
         bgSize={'cover'}
@@ -30,7 +30,7 @@ const Index = () => {
           <Text className='messiri' mx={'auto'}>ISKCON Inc.</Text>
         </Box>
         <VStack
-          spacing={0} pt={'6rem'}
+          spacing={0} pt={['2rem', '6rem']}
           w={'full'}
           h={'inherit'} color={'white'}
           bgGradient={'linear(to-br, #13005AE6, #00337C80)'}
@@ -44,8 +44,22 @@ const Index = () => {
           >
             Login Now To ISKCON Edu
           </Button>
-          <Image pos={'relative'} src='/mockuper.png' w={['full', 'xl']} top={'10vh'} />
+          <Image pos={['absolute','relative']} src='/mockuper.png' w={['full', 'xl']} top={['unset','10vh']} bottom={['-1rem', 'unset']} />
         </VStack>
+      </Box>
+      <Box
+      p={[4,16]}
+      >
+        <Text pt={16}>
+          Iskcon,Inc. has launched its official all in one Spiritual & Vedic Education app Named " IskconInc Edu " , 
+          which will have free Live and pre recorded Classes on various Spiritual Topics like Bhagavad Gita and 
+          Srimad Bhagavtam in a structured manner with Study material , Tests , Quiz , doubt solving , competitions etc. , 
+          It will also have training classes on various vedic skills like Deity Worship , Prasadam Cooking , Bhajan Singinng etc. , 
+          It will also have structered courses from lower to higher spiritual studies like Bhakti Shastri and Bhakti Adhikari , 
+          For kids it will be having special Vedic Camps and much more !! So what to wait for? 
+          <br />
+          Login into the app now
+        </Text>
       </Box>
       <Stack 
       direction={['column', 'row']}
@@ -66,15 +80,17 @@ const Index = () => {
             That too for FREE!
           </Text>
           <Button
-            colorScheme={'twitter'} mb={6}
+            colorScheme={'twitter'}
             rounded={'full'} size={'lg'}
           >
             Login Now
           </Button>
+          <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
-        <Box w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          <Image src='/ss1.jpeg' w={['48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
-        </Box>
+        <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
+          <Image src='/poster3.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+          <Image src='/poster2.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+        </HStack>
       </Stack>
       <Stack 
       direction={['column', 'row-reverse']}
@@ -94,15 +110,17 @@ const Index = () => {
             No more suffering from now onwards!
           </Text>
           <Button
-            colorScheme={'twitter'} mb={6}
+            colorScheme={'twitter'}
             rounded={'full'} size={'lg'}
           >
             Login Now
           </Button>
+          <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
-        <Box w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'}>
-          <Image src='/ss2.jpeg' w={['48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
-        </Box>
+        <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
+          <Image src='/poster1.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+          <Image src='/poster5.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+        </HStack>
       </Stack>
       <Stack 
       direction={['column', 'row']}
@@ -124,14 +142,16 @@ const Index = () => {
           </Text>
           <Button
             colorScheme={'twitter'}
-            rounded={'full'} size={'lg'} mb={6}
+            rounded={'full'} size={'lg'}
           >
             Login Now
           </Button>
+          <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
-        <Box w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'}>
-          <Image src='/ss4.jpeg' w={['48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
-        </Box>
+        <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
+          <Image src='/poster4.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+          <Image src='/poster2.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+        </HStack>
       </Stack>
       <Box w={'full'} p={4} bg={'twitter.400'} color={'white'}>
         <Text textAlign={'center'}>&copy; Copyright 2023 - ISKCON Inc.</Text>
