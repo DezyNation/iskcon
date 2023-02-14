@@ -44,37 +44,37 @@ const Index = () => {
           >
             Login Now To ISKCON Edu
           </Button>
-          <Image pos={['absolute','relative']} src='/mockuper.png' w={['full', 'xl']} top={['unset','10vh']} bottom={['-1rem', 'unset']} />
+          <Image pos={['absolute', 'relative']} src='/mockuper.png' w={['full', 'xl']} top={['unset', '10vh']} bottom={['-1rem', 'unset']} />
         </VStack>
       </Box>
       <Box
-      p={[4,16]}
+        p={[4, 16]}
       >
         <Text pt={16}>
-          Iskcon,Inc. has launched its official all in one Spiritual & Vedic Education app Named " IskconInc Edu " , 
-          which will have free Live and pre recorded Classes on various Spiritual Topics like Bhagavad Gita and 
-          Srimad Bhagavtam in a structured manner with Study material , Tests , Quiz , doubt solving , competitions etc. , 
-          It will also have training classes on various vedic skills like Deity Worship , Prasadam Cooking , Bhajan Singinng etc. , 
-          It will also have structered courses from lower to higher spiritual studies like Bhakti Shastri and Bhakti Adhikari , 
-          For kids it will be having special Vedic Camps and much more !! So what to wait for? 
+          Iskcon,Inc. has launched its official all in one Spiritual & Vedic Education app Named " IskconInc Edu " ,
+          which will have free Live and pre recorded Classes on various Spiritual Topics like Bhagavad Gita and
+          Srimad Bhagavtam in a structured manner with Study material , Tests , Quiz , doubt solving , competitions etc. ,
+          It will also have training classes on various vedic skills like Deity Worship , Prasadam Cooking , Bhajan Singinng etc. ,
+          It will also have structered courses from lower to higher spiritual studies like Bhakti Shastri and Bhakti Adhikari ,
+          For kids it will be having special Vedic Camps and much more !! So what to wait for?
           <br />
           Login into the app now
         </Text>
       </Box>
-      <Stack 
-      direction={['column', 'row']}
-      p={[4,16]} justifyContent={'space-between'}
+      <Stack
+        direction={['column', 'row']}
+        p={[4, 16]} justifyContent={'space-between'}
       >
         <Box maxW={['full', '40%']}>
-          <Text 
-          fontSize={['2xl','4xl']}
-          pt={[8]} fontWeight={'semibold'}
+          <Text
+            fontSize={['2xl', '4xl']}
+            pt={[8]} fontWeight={'semibold'}
           >
             Attend Free Live Sessions
           </Text>
           <Text py={6} fontSize={'lg'} lineHeight={'7'}>
-            You can attend live sessions about the Bhagvatam, the Bhagvad Gita, 
-            Vedic Cosmology and many other life changing topics from 
+            You can attend live sessions about the Bhagvatam, the Bhagvad Gita,
+            Vedic Cosmology and many other life changing topics from
             His Grace Gauranga Sundar Prabhu.
             <br />
             That too for FREE!
@@ -88,18 +88,18 @@ const Index = () => {
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
         <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          <Image src='/poster3.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
-          <Image src='/poster2.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+          {/* <Image src='/poster3.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} /> */}
+          <Image src='/poster5.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
         </HStack>
       </Stack>
-      <Stack 
-      direction={['column', 'row-reverse']}
-      p={[4,16]} justifyContent={'space-between'}
+      <Stack
+        direction={['column', 'row-reverse']}
+        p={[4, 16]} justifyContent={'space-between'}
       >
         <Box maxW={['full', '40%']}>
-          <Text 
-          fontSize={['2xl','4xl']}
-          pt={[8]} fontWeight={'semibold'}
+          <Text
+            fontSize={['2xl', '4xl']}
+            pt={[8]} fontWeight={'semibold'}
           >
             Group Chat
           </Text>
@@ -118,25 +118,24 @@ const Index = () => {
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
         <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          <Image src='/poster1.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
-          <Image src='/poster5.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
+          <Image src='/poster1.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          {/* <Image src='/poster5.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} /> */}
         </HStack>
       </Stack>
-      <Stack 
-      direction={['column', 'row']}
-      p={[4,16]} justifyContent={'space-between'}
+      <Stack
+        direction={['column', 'row']}
+        p={[4, 16]} justifyContent={'space-between'}
       >
         <Box maxW={['full', '40%']}>
-          <Text 
-          fontSize={['2xl','4xl']}
-          pt={[8]} fontWeight={'semibold'}
+          <Text
+            fontSize={['2xl', '4xl']}
+            pt={[8]} fontWeight={'semibold'}
           >
             Precious Knowledge
           </Text>
           <Text py={6} fontSize={'lg'} lineHeight={'7'}>
-            Keep learning from free pdfs about Vedic Cosmology, 
-            Devotional Service and Spiritual worlds. 
-            Attempt quizes and test your learning.
+            Keep learning from free pdfs about Vedic Cosmology,
+            Devotional Service and Spiritual worlds.
             <br />
             Curiousity shoul never stop!
           </Text>
@@ -148,12 +147,72 @@ const Index = () => {
           </Button>
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
-        <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          <Image src='/poster4.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
-          <Image src='/poster2.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} />
-        </HStack>
+        <Stack direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
+          <Image src='/poster4.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          <Image src='/poster3.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+        </Stack>
       </Stack>
-      <Box w={'full'} p={4} bg={'twitter.400'} color={'white'}>
+      <Stack
+        direction={['column', 'row-reverse']}
+        p={[4, 16]} justifyContent={'space-between'}
+      >
+        <Box maxW={['full', '40%']}>
+          <Text
+            fontSize={['2xl', '4xl']}
+            pt={[8]} fontWeight={'semibold'}
+          >
+            Attempt Quizzes
+          </Text>
+          <Text py={6} fontSize={'lg'} lineHeight={'7'}>
+            See how much you've learned and advanced in your spiritual journey by 
+            attempting interesting quizes.
+            <br />
+            Learning is now fun!
+          </Text>
+          <Button
+            colorScheme={'twitter'}
+            rounded={'full'} size={'lg'}
+          >
+            Login Now
+          </Button>
+          <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
+        </Box>
+        <Stack direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
+          <Image src='/poster2.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          {/* <Image src='/poster3.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} /> */}
+        </Stack>
+      </Stack>
+      <Stack
+        direction={['column', 'row-reverse']}
+        p={[4, 16]} justifyContent={'space-between'}
+      >
+        <Box maxW={['full', '40%']}>
+          <Text
+            fontSize={['2xl', '4xl']}
+            pt={[8]} fontWeight={'semibold'}
+          >
+            Want To Learn More?
+          </Text>
+          <Text py={6} fontSize={'lg'} lineHeight={'7'}>
+            We have short courses to help you advance with greater enthusiasm in your spiritual journey. 
+            We are adding the new courses regularly.
+            <br />
+            Enroll in any of them and start learning!
+          </Text>
+          <Button
+            colorScheme={'twitter'}
+            rounded={'full'} size={'lg'}
+          >
+            Login Now
+          </Button>
+          <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
+        </Box>
+        <Stack direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
+          <Image src='/poster6.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          {/* <Image src='/poster3.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} /> */}
+        </Stack>
+      </Stack>
+      <Box w={'full'} p={4} bg={'twitter.500'} color={'white'}>
         <Text textAlign={'center'}>&copy; Copyright 2023 - ISKCON Inc.</Text>
       </Box>
     </>
