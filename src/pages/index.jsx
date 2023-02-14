@@ -153,7 +153,7 @@ const Index = () => {
         </Stack>
       </Stack>
       <Stack
-        direction={['column', 'row-reverse']}
+        direction={['column', 'row']}
         p={[4, 16]} justifyContent={'space-between'}
       >
         <Box maxW={['full', '40%']}>
