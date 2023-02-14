@@ -133,6 +133,9 @@ const Index = () => {
           <Image src='/ss4.jpeg' w={['full', '48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
         </Box>
       </Stack>
+      <Box p={'full'} bg={'twitter.400'} color={'white'}>
+        <Text>&copy; Copyright 2023 - ISKCON Inc.</Text>
+      </Box>
     </>
   )
 }
