@@ -17,7 +17,7 @@ const Index = () => {
       <Box
         pos={'relative'}
         width={'full'}
-        h={['80vh', '95vh']}
+        h={['60vh', '95vh']}
         bgImg={'/bgimg.jpg'}
         bgPos={'center'}
         bgSize={'cover'}
@@ -35,7 +35,7 @@ const Index = () => {
           h={'inherit'} color={'white'}
           bgGradient={'linear(to-br, #13005AE6, #00337C80)'}
         >
-          <Text fontSize={['xl', '6xl']} fontWeight={'semibold'} py={'2rem'}>
+          <Text fontSize={['2xl', '6xl']} fontWeight={'semibold'} py={'2rem'}>
             Spiritual Satisfaction Is Here
           </Text>
           <Button
@@ -53,8 +53,8 @@ const Index = () => {
       >
         <Box maxW={['full', '40%']}>
           <Text 
-          fontSize={['xl','4xl']}
-          pt={[4,8]} fontWeight={'semibold'}
+          fontSize={['2xl','4xl']}
+          pt={[8]} fontWeight={'semibold'}
           >
             Attend Free Live Sessions
           </Text>
@@ -66,14 +66,14 @@ const Index = () => {
             That too for FREE!
           </Text>
           <Button
-            colorScheme={'twitter'}
+            colorScheme={'twitter'} mb={6}
             rounded={'full'} size={'lg'}
           >
             Login Now
           </Button>
         </Box>
         <Box w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          <Image src='/ss1.jpeg' w={['full', '48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
+          <Image src='/ss1.jpeg' w={['48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
         </Box>
       </Stack>
       <Stack 
@@ -82,8 +82,8 @@ const Index = () => {
       >
         <Box maxW={['full', '40%']}>
           <Text 
-          fontSize={['xl','4xl']}
-          pt={[4,8]} fontWeight={'semibold'}
+          fontSize={['2xl','4xl']}
+          pt={[8]} fontWeight={'semibold'}
           >
             Group Chat
           </Text>
@@ -94,14 +94,14 @@ const Index = () => {
             No more suffering from now onwards!
           </Text>
           <Button
-            colorScheme={'twitter'}
+            colorScheme={'twitter'} mb={6}
             rounded={'full'} size={'lg'}
           >
             Login Now
           </Button>
         </Box>
         <Box w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'}>
-          <Image src='/ss2.jpeg' w={['full', '48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
+          <Image src='/ss2.jpeg' w={['48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
         </Box>
       </Stack>
       <Stack 
@@ -110,8 +110,8 @@ const Index = () => {
       >
         <Box maxW={['full', '40%']}>
           <Text 
-          fontSize={['xl','4xl']}
-          pt={[4,8]} fontWeight={'semibold'}
+          fontSize={['2xl','4xl']}
+          pt={[8]} fontWeight={'semibold'}
           >
             Precious Knowledge
           </Text>
@@ -124,17 +124,17 @@ const Index = () => {
           </Text>
           <Button
             colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
+            rounded={'full'} size={'lg'} mb={6}
           >
             Login Now
           </Button>
         </Box>
         <Box w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'}>
-          <Image src='/ss4.jpeg' w={['full', '48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
+          <Image src='/ss4.jpeg' w={['48']} mx={'auto'} rounded={16} boxShadow={'xl'} />
         </Box>
       </Stack>
-      <Box p={'full'} bg={'twitter.400'} color={'white'}>
-        <Text>&copy; Copyright 2023 - ISKCON Inc.</Text>
+      <Box w={'full'} p={4} bg={'twitter.400'} color={'white'}>
+        <Text textAlign={'center'}>&copy; Copyright 2023 - ISKCON Inc.</Text>
       </Box>
     </>
   )
