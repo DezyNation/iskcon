@@ -44,6 +44,7 @@ const Index = () => {
           >
             Login Now To ISKCON Edu
           </Button>
+          <Text fontSize={'xs'}>Organisation Code - orpoi</Text>
           <Image pos={['absolute', 'relative']} src='/mockuper.png' w={['full', 'xl']} top={['unset', '10vh']} bottom={['-1rem', 'unset']} />
         </VStack>
       </Box>
