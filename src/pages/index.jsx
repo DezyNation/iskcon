@@ -266,7 +266,7 @@ const Index = () => {
       <Box>
         <Stack
           direction={['column', 'row']}
-          p={[8, 16]} alignItems={'center'}
+          p={[4, 16]} alignItems={'center'}
           justifyContent={'flex-start'}
         >
           <Image
