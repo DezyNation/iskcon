@@ -8,7 +8,9 @@ import {
   Text,
   Button,
   VStack,
+  Show,
 } from '@chakra-ui/react'
+import Link from 'next/link'
 
 const Index = () => {
   return (
@@ -38,20 +40,34 @@ const Index = () => {
           <Text fontSize={['2xl', '6xl']} fontWeight={'semibold'} py={'2rem'}>
             Spiritual Satisfaction Is Here
           </Text>
-          <Button
-            colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
-          >
-            Login Now To ISKCON Edu
-          </Button>
+          <Link href={'https://app.iskconincedu.com/'}>
+            <Button
+              colorScheme={'twitter'}
+              rounded={'full'} size={'lg'}
+            >
+              Login Now To ISKCON Edu
+            </Button>
+          </Link>
           <Text fontSize={'xs'}>Organisation Code - orpoi</Text>
           <Image pos={['absolute', 'relative']} src='/mockuper.png' w={['full', 'xl']} top={['unset', '10vh']} bottom={['-1rem', 'unset']} />
         </VStack>
       </Box>
+      <Box p={[4, 16]}>
+        <Text pt={8} textAlign={'center'} fontWeight={'semibold'} fontSize={['xl', '3xl']}>Download Our App</Text>
+        <Text pt={4} textAlign={'center'} fontWeight={'medium'} fontSize={['lg', 'lg']}>Organisation Code For iOS Users - orpoi</Text>
+        <Stack direction={['column', 'row']} gap={4} w={'full'} alignItems={'center'} justifyContent={'space-evenly'}>
+          <Link href={'https://apps.apple.com/in/app/classplus/id1324522260'}>
+            <Image src={'https://freeiconshop.com/wp-content/uploads/edd/app-store-badge-128x128.png'} maxW={'xs'} />
+          </Link>
+          <Link href={'https://apps.apple.com/in/app/classplus/id1324522260'}>
+            <Image src={'https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'} maxW={'xs'} />
+          </Link>
+        </Stack>
+      </Box>
       <Box
         p={[4, 16]}
       >
-        <Text pt={16}>
+        <Text fontSize={'lg'}>
           Iskcon,Inc. has launched its official all in one Spiritual & Vedic Education app Named " IskconInc Edu " ,
           which will have free Live and pre recorded Classes on various Spiritual Topics like Bhagavad Gita and
           Srimad Bhagavtam in a structured manner with Study material , Tests , Quiz , doubt solving , competitions etc. ,
@@ -80,17 +96,23 @@ const Index = () => {
             <br />
             That too for FREE!
           </Text>
-          <Button
-            colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
-          >
-            Login Now
-          </Button>
+          <Link href={'https://app.iskconincedu.com/'}>
+            <Button
+              colorScheme={'twitter'}
+              rounded={'full'} size={'lg'}
+            >
+              Login Now
+            </Button>
+          </Link>
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
         <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          {/* <Image src='/poster3.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} /> */}
-          <Image src='/poster5.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          <Show below='md'>
+            <Image src='/poster5.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          </Show>
+          <Show above='md'>
+            <Image src='/poster5_d.png' w={['full']} rounded={16} boxShadow={'xl'} />
+          </Show>
         </HStack>
       </Stack>
       <Stack
@@ -110,17 +132,23 @@ const Index = () => {
             <br />
             No more suffering from now onwards!
           </Text>
-          <Button
-            colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
-          >
-            Login Now
-          </Button>
+          <Link href={'https://app.iskconincedu.com/'}>
+            <Button
+              colorScheme={'twitter'}
+              rounded={'full'} size={'lg'}
+            >
+              Login Now
+            </Button>
+          </Link>
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
         <HStack w={['full', '50%']} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={'center'}>
-          <Image src='/poster1.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
-          {/* <Image src='/poster5.jpeg' w={['40','48']} rounded={16} boxShadow={'xl'} /> */}
+          <Show below='md'>
+            <Image src='/poster1.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          </Show>
+          <Show above='md'>
+            <Image src='/poster1_d.png' w={['full']} rounded={16} boxShadow={'xl'} />
+          </Show>
         </HStack>
       </Stack>
       <Stack
@@ -140,17 +168,25 @@ const Index = () => {
             <br />
             Curiousity shoul never stop!
           </Text>
-          <Button
-            colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
-          >
-            Login Now
-          </Button>
+          <Link href={'https://app.iskconincedu.com/'}>
+            <Button
+              colorScheme={'twitter'}
+              rounded={'full'} size={'lg'}
+            >
+              Login Now
+            </Button>
+          </Link>
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
-        <Stack direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
-          <Image src='/poster4.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
-          <Image src='/poster3.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+        <Stack pos={'relative'} direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
+          <Show below='md'>
+            <Image src='/poster4.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+            <Image src='/poster3.png' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          </Show>
+          <Show above='md'>
+            <Image src='/poster4_d.png' pos={'relative'} top={'-2rem'} left={'-2rem'} w={'xs'} objectFit={'contain'} rounded={16} />
+            <Image src='/poster3_d.png' pos={'relative'} bottom={'-2rem'} right={'2rem'} w={'xs'} objectFit={'contain'} rounded={16} />
+          </Show>
         </Stack>
       </Stack>
       <Stack
@@ -165,22 +201,28 @@ const Index = () => {
             Attempt Quizzes
           </Text>
           <Text py={6} fontSize={'lg'} lineHeight={'7'}>
-            See how much you've learned and advanced in your spiritual journey by 
+            See how much you've learned and advanced in your spiritual journey by
             attempting interesting quizes.
             <br />
             Learning is now fun!
           </Text>
-          <Button
-            colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
-          >
-            Login Now
-          </Button>
+          <Link href={'https://app.iskconincedu.com/'}>
+            <Button
+              colorScheme={'twitter'}
+              rounded={'full'} size={'lg'}
+            >
+              Login Now
+            </Button>
+          </Link>
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
         <Stack direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
-          <Image src='/poster2.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
-          {/* <Image src='/poster3.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} /> */}
+          <Show below='md'>
+            <Image src='/poster2.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          </Show>
+          <Show above='md'>
+            <Image src='/poster2_d.png' w={['full']} rounded={16} boxShadow={'xl'} />
+          </Show>
         </Stack>
       </Stack>
       <Stack
@@ -195,22 +237,28 @@ const Index = () => {
             Want To Learn More?
           </Text>
           <Text py={6} fontSize={'lg'} lineHeight={'7'}>
-            We have short courses to help you advance with greater enthusiasm in your spiritual journey. 
+            We have short courses to help you advance with greater enthusiasm in your spiritual journey.
             We are adding the new courses regularly.
             <br />
             Enroll in any of them and start learning!
           </Text>
-          <Button
-            colorScheme={'twitter'}
-            rounded={'full'} size={'lg'}
-          >
-            Login Now
-          </Button>
+          <Link href={'https://app.iskconincedu.com/'}>
+            <Button
+              colorScheme={'twitter'}
+              rounded={'full'} size={'lg'}
+            >
+              Login Now
+            </Button>
+          </Link>
           <Text fontSize={'xs'} mb={6}>Organisation Code - orpoi</Text>
         </Box>
         <Stack direction={['column', 'row']} gap={'4'} w={['full', '50%']} justifyContent={'center'}>
-          <Image src='/poster6.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
-          {/* <Image src='/poster3.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} /> */}
+          <Show below='md'>
+            <Image src='/poster6.jpeg' w={['full', '48']} rounded={16} boxShadow={'xl'} />
+          </Show>
+          <Show above='md'>
+            <Image src='/poster6_d.png' w={['full']} rounded={16} boxShadow={'xl'} />
+          </Show>
         </Stack>
       </Stack>
       <Box w={'full'} p={4} bg={'twitter.500'} color={'white'}>
