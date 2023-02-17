@@ -59,7 +59,7 @@ const Index = () => {
           <Link href={'https://apps.apple.com/in/app/classplus/id1324522260'}>
             <Image src={'https://freeiconshop.com/wp-content/uploads/edd/app-store-badge-128x128.png'} maxW={'xs'} />
           </Link>
-          <Link href={'https://apps.apple.com/in/app/classplus/id1324522260'}>
+          <Link href={'https://play.google.com/store/apps/details?id=co.diy.orpoi'}>
             <Image src={'https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'} maxW={'xs'} />
           </Link>
         </Stack>
@@ -261,6 +261,32 @@ const Index = () => {
           </Show>
         </Stack>
       </Stack>
+
+
+      <Box>
+        <Stack
+          direction={['column', 'row']}
+          p={[8, 16]} alignItems={'center'}
+          justifyContent={'flex-start'}
+        >
+          <Image
+            w={['full', 'sm']}
+            src={'srila_prabhupada.png'}
+          />
+          <Box pt={[8, 0]} pl={[0, 16]}>
+            <Text>With The Blessings Of His Divine Grace</Text>
+            <Text className={'messiri'} fontSize={['4xl', '5xl', '6xl']} color={'yellow.500'}>Srila Prabhupada</Text>
+            <Text pt={8}>
+              Srila Prabhupada is the divine personality and  biggest ambassador of Santana Dharma,
+              who preached it glories around the globe fulfilling desire of Lord Krishna and Lord Chaitanya
+              saving humanity from dark well of Materialism,voidism and atheism.
+              It was his wish and order to establish Varṇasrama Dharma to make Krishna Consciousness Movement success at wider scale.
+            </Text>
+          </Box>
+        </Stack>
+      </Box>
+
+      {/* Footer */}
       <Box w={'full'} p={4} bg={'twitter.500'} color={'white'}>
         <Text textAlign={'center'}>&copy; Copyright 2023 - ISKCON Inc.</Text>
       </Box>
