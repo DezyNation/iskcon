@@ -67,16 +67,19 @@ const Index = () => {
       <Box
         p={[4, 16]}
       >
-        <Text fontSize={'lg'}>
-          Iskcon,Inc. has launched its official all in one Spiritual & Vedic Education app Named " IskconInc Edu " ,
-          which will have free Live and pre recorded Classes on various Spiritual Topics like Bhagavad Gita and
-          Srimad Bhagavtam in a structured manner with Study material , Tests , Quiz , doubt solving , competitions etc. ,
-          It will also have training classes on various vedic skills like Deity Worship , Prasadam Cooking , Bhajan Singinng etc. ,
-          It will also have structered courses from lower to higher spiritual studies like Bhakti Shastri and Bhakti Adhikari ,
-          For kids it will be having special Vedic Camps and much more !! So what to wait for?
-          <br />
-          Login into the app now
-        </Text>
+        <Stack direction={['column', 'row']} alignItems={'center'} justifyContent={'space-between'} gap={8}>
+          <Text fontSize={'lg'}>
+            Iskcon,Inc. has launched its official all in one Spiritual & Vedic Education app Named " IskconInc Edu " ,
+            which will have free Live and pre recorded Classes on various Spiritual Topics like Bhagavad Gita and
+            Srimad Bhagavtam in a structured manner with Study material , Tests , Quiz , doubt solving , competitions etc. ,
+            It will also have training classes on various vedic skills like Deity Worship , Prasadam Cooking , Bhajan Singinng etc. ,
+            It will also have structered courses from lower to higher spiritual studies like Bhakti Shastri and Bhakti Adhikari ,
+            For kids it will be having special Vedic Camps and much more !! So what to wait for?
+            <br />
+            Login into the app now
+          </Text>
+          <Image src='/acheivment.jpg' boxSize={['full', 'xs']} rounded={12} boxShadow={'xl'} />
+        </Stack>
       </Box>
       <Stack
         direction={['column', 'row']}
