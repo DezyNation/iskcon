@@ -78,7 +78,7 @@ const Index = () => {
             <br />
             Login into the app now
           </Text>
-          <Image src='/acheivment.jpg' boxSize={['full', 'xs']} rounded={12} boxShadow={'xl'} />
+          <Image src='/acheivment.jpg' boxSize={['xs']} rounded={12} boxShadow={'xl'} />
         </Stack>
       </Box>
       <Stack
